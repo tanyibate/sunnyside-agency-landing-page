@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header-styles.module.scss";
 import logo from "../../assets/icons/logo.svg";
 import arrowDown from "../../assets/icons/icon-arrow-down.svg";
 import burgerMenu from "../../assets/icons/icon-hamburger.svg";
 
 export default function Header() {
+  const [burgerMenuActive, setBurgerMenuActive] = useState(false);
   return (
     <div className={styles.header_container}>
       {/*<img src={mobileHeaderImage} alt="" className={styles.mobile_image} />*/}
@@ -23,21 +24,27 @@ export default function Header() {
           <div className={styles.contact_button}>CONTACT</div>
         </div>
         <div className={styles.burger_menu}>
-          <img src={burgerMenu} alt="" />
+          <img
+            src={burgerMenu}
+            alt=""
+            onClick={() => setBurgerMenuActive(!burgerMenuActive)}
+          />
         </div>
       </header>
-      <div className={styles.mobile_menu_container}>
-        <div className={styles.triangle_container}>
-          <div className={styles.triangle}></div>
-        </div>
+      {burgerMenuActive && (
+        <div className={styles.mobile_menu_container}>
+          <div className={styles.triangle_container}>
+            <div className={styles.triangle}></div>
+          </div>
 
-        <div className={styles.mobile_menu}>
-          <p>About</p>
-          <p>Services</p>
-          <p>Projects</p>
-          <div className={styles.contact_button_mobile}>CONTACT</div>
+          <div className={styles.mobile_menu}>
+            <p>About</p>
+            <p>Services</p>
+            <p>Projects</p>
+            <div className={styles.contact_button_mobile}>CONTACT</div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
