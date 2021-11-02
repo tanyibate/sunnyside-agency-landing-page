@@ -43,7 +43,7 @@ export default function AboutSection() {
             photographers, videographers and copywriters, we'll build and extend
             your brand in digital places.
           </p>
-          <h3>LEARN MORE</h3>
+          <h3 style={{ textDecorationColor: "red" }}>LEARN MORE</h3>
         </div>
       </div>
     </div>

@@ -1,0 +1,26 @@
+.footer_container {
+  background-color: #a3ddcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+  width: 100%;
+  .links {
+    display: flex;
+    margin-bottom: 90px;
+  }
+  .logo {
+    margin-bottom: 60px;
+  }
+  p {
+    margin: 0 30px;
+    font-size: 15px;
+  }
+  .social_icons {
+    display: flex;
+    img {
+      margin: 0 10px;
+    }
+  }
+}
