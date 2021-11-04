@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-size: 18px;
   font-family: "Barlow", sans-serif;
+  color: hsl(212, 27%, 19%);
 }
 
 * {
