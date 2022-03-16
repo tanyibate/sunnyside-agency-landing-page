@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./review-section-styles.module.scss";
 import emilyImage from "../../assets/icons/image-emily.jpg";
-import thomasImage from "../../assets/icons/image-thomas.jpg";
-import jennieImage from "../../assets/icons/image-jennie.jpg";
 
 export default function ReviewSection() {
   return (
